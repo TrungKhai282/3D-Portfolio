@@ -20,7 +20,7 @@ const MacbookView = () => {
           maxPolarAngle={Math.PI / 2} // Giới hạn góc xoay tối đa theo trục y
           minAzimuthAngle={-Math.PI / 2} // Giới hạn góc xoay tối thiểu theo trục x
           maxAzimuthAngle={Math.PI / 2} // Giới hạn góc xoay tối đa theo trục x
-          rotateSpeed={0.3}
+          rotateSpeed={0.8}
         />
         {/* <PresentationControls global polar={[0, 0.9]} azimuth={[-0.5, 0.5]}> */}
         <group scale={0.7}>
