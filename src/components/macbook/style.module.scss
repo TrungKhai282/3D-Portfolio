@@ -1,0 +1,24 @@
+.macbookView {
+  background: radial-gradient(
+    circle,
+    rgba(130, 130, 130, 1) 0%,
+    rgba(150, 150, 150, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+
+  canvas {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .macbookIframe {
+    iframe {
+      width: 1440px;
+      height: 960px;
+      border-radius: 36px 36px 18px 18px;
+      border: none;
+    }
+  }
+}
