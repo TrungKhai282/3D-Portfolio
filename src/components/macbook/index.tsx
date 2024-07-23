@@ -4,6 +4,7 @@ import React from "react";
 import style from "./style.module.scss";
 import { Canvas } from "@react-three/fiber";
 import {
+  ContactShadows,
   Environment,
   Html,
   OrbitControls,
@@ -26,11 +27,11 @@ const MacbookView = () => {
         <group scale={0.7}>
           <Html
             wrapperClass={style.macbookIframe}
-            position={[0, 0.3, -2.25]}
+            position={[0, 0.35, -2.27]}
             transform
             distanceFactor={1.2}
-            rotation={[-0.34, 0, 0]}
-            scale={1.087}
+            rotation={[-0.35, 0, 0]}
+            scale={1.07}
           >
             <iframe src="https://trungkhai.vercel.app/"></iframe>
           </Html>
@@ -40,6 +41,15 @@ const MacbookView = () => {
             scale={14}
           />
         </group>
+        <ContactShadows
+          position={[0, -1, 0]}
+          opacity={0.5}
+          scale={15}
+          blur={1}
+          far={10}
+          resolution={256}
+          color={"#000000"}
+        />
         <Environment preset="warehouse" />
         {/* </PresentationControls> */}
         <ambientLight intensity={0} />
